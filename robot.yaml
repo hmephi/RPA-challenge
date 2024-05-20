@@ -1,0 +1,13 @@
+robot: Robocorp Amykelani
+  name: Robotics Process Automation (RPA) Challenge
+  version: 1.0
+  author: Amykelani Skhosana <amykelani.skhosana@yahoo.com>
+  description: This robot automates the process of extracting data from a news site.
+
+  tasks:
+    - task1: 
+        description: Python script to automate the process of extracting data from a news site. It utilizes Selenium for web automation and openpyxl for Excel file handling.
+        script: main.py
+    - task2:
+        description: Python script to automate the testing process of extracting data from a news site.
+        script: unit_test.py

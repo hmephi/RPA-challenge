@@ -1,0 +1,10 @@
+name: Robotics Process Automation (RPA) Challenge
+channels:
+  - defaults
+dependencies:
+  - python=3.8.3
+  - pip
+  - pip:
+    - rpaframework
+    - selenium
+    - openpyxl
