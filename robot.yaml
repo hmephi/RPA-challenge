@@ -1,7 +1,7 @@
-robot: Robocorp Amykelani
-  name: Robotics Process Automation (RPA) Challenge
+robot: Robocorp 
+  name: 
   version: 1.0
-  author: Amykelani Skhosana <amykelani.skhosana@yahoo.com>
+  author: 
   description: This robot automates the process of extracting data from a news site.
 
   tasks:
