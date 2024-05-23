@@ -9,10 +9,12 @@ from RPA.Archive import Archive
 from RPA.Robocorp.WorkItems import WorkItems
 from RPA.HTTP import HTTP
 from dateutil.relativedelta import relativedelta
-from RPA.Browser.Selenium import Selenium
+from RPA.Browser.Selenium import Selenium 
 from RPA.Excel.Files import Files
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import StaleElementReferenceException
+
+
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='./output/tasks_info.log', level=logging.INFO)
@@ -42,7 +44,7 @@ class NewsScraperContent:
 
     def open_the_news_website(self):
         """Navigates to the given URL"""
-        self.browser.open_available_browser(maximized=True)
+        self.browser.open_available_browser(maximized=False)
         self.browser.go_to(SITE_URL)
         logger.info("Page navigate successfully.")
         self.open_search_field()
@@ -140,7 +142,7 @@ class NewsScraperContent:
 
     def create_and_save_excel_file(self):
         """Create and save excel file"""
-        self.excel.create_workbook(path="./output/data.xlsx", fmt="xlsx")
+        self.excel.create_workbook(path="output/data.xlsx", fmt="xlsx")
         Worksheet_Data = {
             "Title": self.title,
             "Description": self.description,

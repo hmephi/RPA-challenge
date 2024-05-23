@@ -1,8 +1,8 @@
-# Al Jazeera Automation
+# RPA process Automation
 This project automates tasks related to retrieving news articles from the Al Jazeera website.
 
-## Overview
-The Al Jazeera Automation project utilizes Python RPA to execute the following tasks:
+# Overview
+This Automation project utilizes Python RPA to execute the following tasks:
 - Navigates to the Al Jazeera website using a browser.
 - Searches for news articles based on user-defined search phrases.
 - Sorts search results to display the latest articles.

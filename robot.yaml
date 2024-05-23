@@ -1,5 +1,9 @@
 # For more details on the format and content:
 # https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
+robot: Robocorp David Mephi
+  name: Robotics Process Automation (RPA) Challenge
+  version: 1.0
+  author: David Mephi <hmephi@gmail.com>
 
 tasks:
   entrypoint:
