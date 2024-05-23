@@ -1,13 +1,19 @@
-robot: Robocorp 
- 
-  version: 1.0
-  author: 
-  description: This robot automates the process of extracting data from a news site.
+# For more details on the format and content:
+# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
 
-  tasks:
-    - task1: 
-        description: Python script to automate the process of extracting data from a news site. It utilizes Selenium for web automation and openpyxl for Excel file handling.
-        script: python -m robocorp.tasks run main.py
-    - task2:
-        description: Python script to automate the testing process of extracting data from a news site.
-        script: python -m robocorp.tasks run unit_test.py
+tasks:
+  entrypoint:
+    command:
+      - python
+      - tasks.py
+
+condaConfigFile: conda.yaml
+
+artifactsDir: output
+
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore

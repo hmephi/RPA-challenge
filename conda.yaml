@@ -1,10 +1,12 @@
-name: Robotics Process Automation (RPA) Challenge
+# For more details on the format and content:
+# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-condayaml
+# Tip: Adding a link to the release notes of the packages helps maintenance and security.
+
 channels:
-  - defaults
+  - conda-forge
+
 dependencies:
-  - python=3.8.3
-  - pip
+  - python=3.10.12                # https://pyreadiness.org/3.10
+
   - pip:
-    - rpaframework
-    - selenium
-    - openpyxl
+    - rpaframework==28.0.0        # https://rpaframework.org/releasenotes.html
